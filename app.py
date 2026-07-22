@@ -19,7 +19,7 @@ except ImportError:
 # =========================================================
 
 st.set_page_config(
-    page_title="ApexScale AI - Ultra HD Media Upscaler",
+    page_title="AI IMAGE RESULATION",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -54,9 +54,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header Section
-st.title("⚡ ApexScale AI - Ultra HD Media Upscaler")
-st.markdown("### 🚀 **Developed by Furqan**")
-st.caption("AI-Powered Low-Resolution to 4K/8K Media Quality Enhancer & Batch Processor")
+st.title(" HIGH RESULATION ")
+st.markdown("### 🚀 **Developed by FURQAN**")
+st.caption("AI-Powered Low-Resolution to 4K/8K Media Quality Enhancer...")
 
 st.divider()
 
@@ -84,13 +84,13 @@ if not gemini_api_key:
     if user_key_input:
         gemini_api_key = user_key_input
 else:
-    st.sidebar.success("✅ Gemini API Key loaded from Streamlit Secrets!")
+    st.sidebar.success("✅ Gemini API Key loaded...")
 
-upscale_factor = st.sidebar.radio("Target Resolution Preset", ["2x (Full HD 1080p)", "4x (Ultra HD 4K)", "8x (Extreme 8K)"])
+upscale_factor = st.sidebar.radio("Target Resolution Preset", ["Full HD 1080p", "Ultra HD 4K", "Extreme 8K"])
 sharpness = st.sidebar.slider("Edge Sharpness", 0, 100, 60)
 denoise = st.sidebar.slider("Denoise / Compression Artifact Removal", 0, 100, 40)
 contrast = st.sidebar.slider("Contrast Enhancement", 0, 100, 30)
-ai_analysis = st.sidebar.checkbox("AI Image Quality Analysis (Gemini)", value=True)
+ai_analysis = st.sidebar.checkbox("AI Image Quality Analysis..", value=True)
 
 # Super Resolution Processing Function
 def upscale_and_enhance(pil_img, scale_factor, sharpness_val, denoise_val, contrast_val):
@@ -190,8 +190,8 @@ if uploaded_files:
         st.divider()
 
 else:
-    st.info("👆 Upload one or more low-resolution photos above to test AI Upscaling!")
+    st.info("👆 Upload one or more low-resolution photos..")
 
 # Footer
 st.markdown("---")
-st.markdown("**ApexScale AI** • Built with Streamlit, Python & Gemini • **Developed by Furqan**")
+st.markdown("**Developed by Furqan**")
