@@ -1,0 +1,6 @@
+{
+  "name": "ApexScale AI - Ultra HD Media Upscaler",
+  "description": "AI-Powered Low-Res to 4K/8K Picture & Video Resolution Upscaler with Batch Processing. Developed by Furqan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
